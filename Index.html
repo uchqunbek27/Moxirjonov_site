@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT World | Kompyuter olami</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#07111f;color:#edf7ff}
+header{padding:30px 15px;text-align:center;background:linear-gradient(135deg,#102d53,#087eaa)}
+header h1{font-size:36px;margin:5px}
+header p{color:#d1f4ff}
+nav{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;padding:15px;background:#0c1b2d;position:sticky;top:0;z-index:5}
+nav a{color:#67e8f9;text-decoration:none;padding:8px;font-size:14px}
+nav a:hover{color:white}
+.container{max-width:1100px;margin:auto;padding:20px}
+h2{color:#67e8f9;border-bottom:1px solid #23435f;padding-bottom:10px}
+.intro{background:#10243b;border-radius:15px;padding:25px;line-height:1.8}
+.search{width:100%;padding:14px;border-radius:10px;border:1px solid #26759b;background:#10243b;color:white;margin:15px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.card{background:#10243b;border:1px solid #1b4261;border-radius:13px;padding:18px;transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:#4eeaff}
+.pic{font-size:42px;text-align:center;padding:12px}
+.card h3{color:#7cecff;margin:8px 0}
+.card p{line-height:1.6;color:#d4e2f0}
+.tag{display:inline-block;background:#123e5c;color:#8ceeff;padding:5px 9px;border-radius:20px;font-size:12px}
+.fact-number{font-size:25px;color:#5ce5ff;font-weight:bold}
+footer{text-align:center;background:#0c1b2d;padding:30px;line-height:2;color:#c8d8e8}
+footer a{color:#67e8f9}
+button{padding:10px 16px;background:#087eaa;color:white;border:0;border-radius:8px;cursor:pointer}
+</style>
+</head>
+<body>
+
+<header>
+<div style="font-size:45px">💻 🌐 🤖</div>
+<h1>IT WORLD</h1>
+<p>Kompyuterlar va zamonaviy texnologiyalar olami</p>
+<p>Bilim ol • O‘rgan • Kelajakni yarat!</p>
+</header>
+
+<nav>
+<a href="#bosh">Bosh sahifa</a>
+<a href="#qismlar">Kompyuter qismlari</a>
+<a href="#windows">Windows</a>
+<a href="#office">Office</a>
+<a href="#dasturlar">Dasturlar</a>
+<a href="#faktlar">50 ta ma’lumot</a>
+</nav>
+
+<main class="container">
+
+<section id="bosh">
+<h2>IT World saytiga xush kelibsiz!</h2>
+<div class="intro">
+<p>Ushbu saytda kompyuter, noutbuk, operatsion tizimlar, Microsoft Office, internet, dasturlash va texnologiyalar haqida foydali ma’lumotlar topasiz.</p>
+<p>Kompyuter — ma’lumotlarni qabul qilish, qayta ishlash, saqlash va natijalarni chiqarish uchun ishlatiladigan elektron qurilma.</p>
+</div>
+<input class="search" id="search" placeholder="🔎 Ma’lumot qidirish..." oninput="filterCards()">
+</section>
+
+<section id="qismlar">
+<h2>Kompyuter qismlari</h2>
+<div class="grid searchable">
+<div class="card"><div class="pic">🧠</div><h3>Protsessor (CPU)</h3><p>Kompyuter buyruqlarini bajaradi va hisob-kitoblarni amalga oshiradi.</p></div>
+<div class="card"><div class="pic">🎮</div><h3>Videokarta (GPU)</h3><p>Rasm, video, 3D grafika va o‘yin tasvirlarini qayta ishlaydi.</p></div>
+<div class="card"><div class="pic">🧩</div><h3>Operativ xotira (RAM)</h3><p>Ishlayotgan dasturlar ma’lumotlarini vaqtincha saqlaydi.</p></div>
+<div class="card"><div class="pic">💾</div><h3>SSD</h3><p>Fayllarni saqlaydi. Odatda tez ishlaydi va harakatlanuvchi mexanik qismlari yo‘q.</p></div>
+<div class="card"><div class="pic">📀</div><h3>HDD</h3><p>Ma’lumotlarni magnit disklar yordamida saqlaydigan qurilma.</p></div>
+<div class="card"><div class="pic">🖥️</div><h3>Monitor</h3><p>Matn, rasm, video va dastur oynalarini ekranda ko‘rsatadi.</p></div>
+<div class="card"><div class="pic">⌨️</div><h3>Klaviatura</h3><p>Matn yozish, buyruq berish va kompyuterni boshqarish uchun ishlatiladi.</p></div>
+<div class="card"><div class="pic">🖱️</div><h3>Sichqoncha</h3><p>Kursorni harakatlantirish, fayl tanlash va dasturlarni ochishga yordam beradi.</p></div>
+<div class="card"><div class="pic">🔌</div><h3>Quvvat bloki</h3><p>Elektr energiyasini kompyuter qismlari uchun mos quvvatga aylantiradi.</p></div>
+<div class="card"><div class="pic">🧱</div><h3>Ona plata</h3><p>Protsessor, RAM va boshqa qismlarni bir-biriga ulaydi.</p></div>
+<div class="card"><div class="pic">🌬️</div><h3>Sovitish tizimi</h3><p>Ventilyator va radiatorlar yordamida qizib ketishni kamaytiradi.</p></div>
+<div class="card"><div class="pic">🎧</div><h3>Quloqchin</h3><p>Ovozlarni shaxsiy tinglash uchun ishlatiladi.</p></div>
+</div>
+</section>
+
+<section id="windows">
+<h2>Windows operatsion tizimlari</h2>
+<p>Windows — Microsoft kompaniyasi ishlab chiqqan operatsion tizimlar oilasi.</p>
+<div class="grid searchable">
+<div class="card"><div class="pic">🪟</div><h3>Windows 1.0</h3><p>1985-yilda chiqarilgan ilk Windows versiyasi.</p></div>
+<div class="card"><div class="pic">🪟</div><h3>Windows 2.0</h3><p>1987-yilda chiqarilgan, oynalar bilan ishlash imkoniyatlari yaxshilangan.</p></div>
+<div class="card"><div class="pic">🪟</div><h3>Windows 3.1</h3><p>1992-yilda ommalashgan grafik interfeysli tizim.</p></div>
+<div class="card"><div class="pic">🪟</div><h3>Windows 95</h3><p>1995-yilda chiqarilgan. Start menyusi va vazifalar paneli bilan mashhur.</p></div>
+<div class="card"><div class="pic">🪟</div><h3>Windows 98</h3><p>1998-yilda chiqarilgan, internet va qurilmalar bilan ishlash yaxshilangan.</p></div>
+<div class="card"><div class="pic">🪟</div><h3>Windows 2000</h3><p>2000-yilda taqdim etilgan, biznes va ish muhitida ishlatilgan.</p></div>
+<div class="card"><div class="pic">🪟</div><h3>Windows XP</h3><p>2001-yilda chiqarilgan va uzoq vaqt mashhur bo‘lgan.</p></div>
+<div class="card"><div class="pic">🪟</div><h3>Windows Vista</h3><p>2007-yilda chiqarilgan, yangi ko‘rinish va xavfsizlik imkoniyatlariga ega.</p></div>
+<div class="card"><div class="pic">🪟</div><h3>Windows 7</h3><p>2009-yilda chiqarilgan va ko‘plab foydalanuvchilar orasida mashhur bo‘lgan.</p></div>
+<div class="card"><div class="pic">🪟</div><h3>Windows 8</h3><p>2012-yilda chiqarilgan, bosh ekran dizayniga urg‘u berilgan.</p></div>
+<div class="card"><div class="pic">🪟</div><h3>Windows 8.1</h3><p>Windows 8 uchun yangilangan versiya, 2013-yilda taqdim etilgan.</p></div>
+<div class="card"><div class="pic">🪟</div><h3>Windows 10</h3><p>2015-yilda chiqarilgan, ko‘plab kompyuterlarda ishlatiladi.</p></div>
+<div class="card"><div class="pic">🪟</div><h3>Windows 11</h3><p>2021-yilda chiqarilgan, yangilangan dizayn va tizim imkoniyatlariga ega.</p></div>
+</div>
+<p class="intro">Eslatma: Windows 10’ning odatiy qo‘llab-quvvatlashi 2025-yil 14-oktabrda tugagan. Windows 11 uchun kompyuter tizim talablari mavjud.</p>
+</section>
+
+<section id="office">
+<h2>Microsoft Office dasturlari</h2>
+<div class="grid searchable">
+<div class="card"><div class="pic">🔵</div><h3>Microsoft Word</h3><p>Matnli hujjatlar, ariza, referat va xatlar yaratish uchun.</p></div>
+<div class="card"><div class="pic">🟢</div><h3>Microsoft Excel</h3><p>Jadval, hisob-kitob, formulalar va diagrammalar bilan ishlash uchun.</p></div>
+<div class="card"><div class="pic">🟠</div><h3>Microsoft PowerPoint</h3><p>Slaydlar va taqdimotlar tayyorlash uchun.</p></div>
+<div class="card"><div class="pic">🎨</div><h3>Microsoft Paint</h3><p>Rasm chizish va rasmlarni oddiy tahrirlash uchun.</p></div>
+<div class="card"><div class="pic">📨</div><h3>Microsoft Outlook</h3><p>Elektron pochta, kalendar va uchrashuvlarni boshqarish uchun.</p></div>
+<div class="card"><div class="pic">📝</div><h3>OneNote</h3><p>Qaydlar, dars konspektlari va fikrlarni tartibli saqlash uchun.</p></div>
+</div>
+</section>
+
+<section id="dasturlar">
+<h2>Boshqa dasturlar va operatsion tizimlar</h2>
+<div class="grid searchable">
+<div class="card"><div class="pic">🍎</div><h3>macOS</h3><p>Apple kompaniyasining Mac kompyuterlari uchun operatsion tizimi.</p></div>
+<div class="card"><div class="pic">🐧</div><h3>Linux</h3><p>Serverlarda, kompyuterlarda va boshqa qurilmalarda ishlatiladigan tizimlar oilasi.</p></div>
+<div class="card"><div class="pic">🤖</div><h3>Android</h3><p>Ko‘plab telefon va planshetlarda ishlatiladigan operatsion tizim.</p></div>
+<div class="card"><div class="pic">📱</div><h3>iOS</h3><p>Apple iPhone qurilmalari uchun operatsion tizim.</p></div>
+<div class="card"><div class="pic">🌐</div><h3>Google Chrome</h3><p>Internet sahifalarini ochish va veb-saytlardan foydalanish uchun brauzer.</p></div>
+<div class="card"><div class="pic">🦊</div><h3>Mozilla Firefox</h3><p>Internetni ko‘rish uchun brauzer.</p></div>
+<div class="card"><div class="pic">🎬</div><h3>VLC Media Player</h3><p>Turli audio va video formatlarini ijro etuvchi dastur.</p></div>
+<div class="card"><div class="pic">🧑‍💻</div><h3>Visual Studio Code</h3><p>HTML, CSS, JavaScript, Python va boshqa tillarda kod yozish muhiti.</p></div>
+<div class="card"><div class="pic">🖼️</div><h3>Adobe Photoshop</h3><p>Rasmlarni tahrirlash va grafik dizayn yaratish dasturi.</p></div>
+<div class="card"><div class="pic">🎞️</div><h3>Adobe Premiere Pro</h3><p>Videolarni montaj qilish va tahrirlash dasturi.</p></div>
+<div class="card"><div class="pic">✈️</div><h3>Telegram</h3><p>Xabarlar yuborish, guruhlar va kanallardan foydalanish ilovasi.</p></div>
+<div class="card"><div class="pic">▶️</div><h3>YouTube</h3><p>Video tomosha qilish va videolar joylash platformasi.</p></div>
+</div>
+</section>
+
+<section id="faktlar">
+<h2>Kompyuter haqida 50 ta foydali ma’lumot</h2>
+<div class="grid searchable">
+<div class="card"><div class="fact-number">01</div><h3>Kompyuter</h3><p>Ma’lumotni qabul qiladi, qayta ishlaydi va natija chiqaradi.</p></div>
+<div class="card"><div class="fact-number">02</div><h3>CPU</h3><p>Protsessor ko‘plab dastur buyruqlarini bajaradi.</p></div>
+<div class="card"><div class="fact-number">03</div><h3>RAM</h3><p>Kompyuter o‘chirilganda operativ xotiradagi vaqtinchalik ma’lumotlar yo‘qoladi.</p></div>
+<div class="card"><div class="fact-number">04</div><h3>SSD</h3><p>Fayllarni tez ochish va tizimni tez ishga tushirishga yordam beradi.</p></div>
+<div class="card"><div class="fact-number">05</div><h3>HDD</h3><p>Katta hajmdagi fayllarni saqlash uchun ishlatilishi mumkin.</p></div>
+<div class="card"><div class="fact-number">06</div><h3>Ona plata</h3><p>Kompyuter qismlarining o‘zaro aloqa qilishiga yordam beradi.</p></div>
+<div class="card"><div class="fact-number">07</div><h3>GPU</h3><p>Grafika va videoni qayta ishlashda muhim rol o‘ynaydi.</p></div>
+<div class="card"><div class="fact-number">08</div><h3>Monitor</h3><p>Natijalarni ekranda ko‘rsatadi.</p></div>
+<div class="card"><div class="fact-number">09</div><h3>Klaviatura</h3><p>Matn va buyruqlar kiritishga yordam beradi.</p></div>
+<div class="card"><div class="fact-number">10</div><h3>Sichqoncha</h3><p>Kursorni boshqarish uchun ishlatiladi.</p></div>
+<div class="card"><div class="fact-number">11</div><h3>Operatsion tizim</h3><p>Qurilma va dasturlar ishini boshqaradi.</p></div>
+<div class="card"><div class="fact-number">12</div><h3>Fayl</h3><p>Ma’lumot saqlanadigan nomlangan obyekt.</p></div>
+<div class="card"><div class="fact-number">13</div><h3>Papka</h3><p>Fayllar va boshqa papkalarni tartiblaydi.</p></div>
+<div class="card"><div class="fact-number">14</div><h3>Internet</h3><p>Dunyo bo‘ylab qurilmalar va tarmoqlarni bog‘laydi.</p></div>
+<div class="card"><div class="fact-number">15</div><h3>Brauzer</h3><p>Veb-saytlarni ochish uchun ishlatiladi.</p></div>
+<div class="card"><div class="fact-number">16</div><h3>Wi-Fi</h3><p>Qurilmalarni simsiz mahalliy tarmoqqa ulashi mumkin.</p></div>
+<div class="card"><div class="fact-number">17</div><h3>Bluetooth</h3><p>Yaqin masofadagi qurilmalarni simsiz bog‘laydi.</p></div>
+<div class="card"><div class="fact-number">18</div><h3>USB</h3><p>Qurilmalarni ulash va ma’lumot uzatish uchun ishlatiladi.</p></div>
+<div class="card"><div class="fact-number">19</div><h3>HDMI</h3><p>Video va audio signallarini uzatishi mumkin.</p></div>
+<div class="card"><div class="fact-number">20</div><h3>Antivirus</h3><p>Zararli dasturlarni aniqlash va ulardan himoyalanishga yordam beradi.</p></div>
+<div class="card"><div class="fact-number">21</div><h3>Parol</h3><p>Hisobni himoya qilish uchun uzun va noyob parol tanlash muhim.</p></div>
+<div class="card"><div class="fact-number">22</div><h3>Ikki bosqichli himoya</h3><p>Hisobga kirishda qo‘shimcha tekshiruvni ta’minlaydi.</p></div>
+<div class="card"><div class="fact-number">23</div><h3>Zaxira nusxa</h3><p>Muhim fayllarni yo‘qolishdan himoya qilishga yordam beradi.</p></div>
+<div class="card"><div class="fact-number">24</div><h3>Bulutli saqlash</h3><p>Fayllarni internet orqali saqlash va ulashish imkonini beradi.</p></div>
+<div class="card"><div class="fact-number">25</div><h3>PDF</h3><p>Hujjat ko‘rinishini turli qurilmalarda saqlashga yordam beradigan format.</p></div>
+<div class="card"><div class="fact-number">26</div><h3>ZIP</h3><p>Fayllarni arxivlash va bir joyga jamlash uchun ishlatiladi.</p></div>
+<div class="card"><div class="fact-number">27</div><h3>Drayver</h3><p>Operatsion tizimga qurilma bilan ishlashga yordam beruvchi dasturiy ta’minot.</p></div>
+<div class="card"><div class="fact-number">28</div><h3>Dastur yangilanishi</h3><p>Xatolarni tuzatishi va xavfsizlikni yaxshilashi mumkin.</p></div>
+<div class="card"><div class="fact-number">29</div><h3>HTML</h3><p>Veb-sahifa tarkibini belgilash uchun ishlatiladi.</p></div>
+<div class="card"><div class="fact-number">30</div><h3>CSS</h3><p>Veb-sahifaning ranglari, joylashuvi va ko‘rinishini belgilaydi.</p></div>
+<div class="card"><div class="fact-number">31</div><h3>JavaScript</h3><p>Veb-sahifalarga interaktiv imkoniyatlar qo‘shadi.</p></div>
+<div class="card"><div class="fact-number">32</div><h3>Python</h3><p>O‘rganishga qulay va turli loyihalarda ishlatiladigan dasturlash tili.</p></div>
+<div class="card"><div class="fact-number">33</div><h3>Algoritm</h3><p>Muammoni yechish uchun ketma-ket ko‘rsatmalar to‘plami.</p></div>
+<div class="card"><div class="fact-number">34</div><h3>Sun’iy intellekt</h3><p>Ma’lumotlardan foydalanib vazifalarni bajarishga mo‘ljallangan texnologiyalar sohasi.</p></div>
+<div class="card"><div class="fact-number">35</div><h3>Server</h3><p>Boshqa qurilmalarga xizmat yoki ma’lumot taqdim etadi.</p></div>
+<div class="card"><div class="fact-number">36</div><h3>Ma’lumotlar bazasi</h3><p>Ma’lumotlarni tartibli saqlash va topishga yordam beradi.</p></div>
+<div class="card"><div class="fact-number">37</div><h3>IP manzil</h3><p>Tarmoqdagi qurilma yoki interfeysni aniqlash uchun ishlatiladi.</p></div>
+<div class="card"><div class="fact-number">38</div><h3>Domen</h3><p>Veb-saytga kirish uchun ishlatiladigan esda qoladigan nom.</p></div>
+<div class="card"><div class="fact-number">39</div><h3>Veb-hosting</h3><p>Sayt fayllarini internetda joylashtirish xizmatidir.</p></div>
+<div class="card"><div class="fact-number">40</div><h3>Git</h3><p>Koddagi o‘zgarishlar tarixini kuzatish tizimi.</p></div>
+<div class="card"><div class="fact-number">41</div><h3>GitHub</h3><p>Kod loyihalarini saqlash va hamkorlikda ishlash platformasi.</p></div>
+<div class="card"><div class="fact-number">42</div><h3>Monitor o‘lchami</h3><p>Odatda ekran diagonali bo‘yicha dyuymlarda o‘lchanadi.</p></div>
+<div class="card"><div class="fact-number">43</div><h3>Ruxsat (resolution)</h3><p>Ekrandagi tasvir nechta piksel bilan ifodalanishini ko‘rsatadi.</p></div>
+<div class="card"><div class="fact-number">44</div><h3>Klaviatura yorliqlari</h3><p>Ctrl+C nusxalaydi, Ctrl+V joylashtiradi, Ctrl+S saqlaydi.</p></div>
+<div class="card"><div class="fact-number">45</div><h3>Recycle Bin</h3><p>Windows’da o‘chirilgan fayllar vaqtincha shu yerda saqlanishi mumkin.</p></div>
+<div class="card"><div class="fact-number">46</div><h3>Skrinshot</h3><p>Ekrandagi tasvirni rasm sifatida saqlash usuli.</p></div>
+<div class="card"><div class="fact-number">47</div><h3>Qizib ketish</h3><p>Chang va havo aylanishining yomonligi haroratni oshirishi mumkin.</p></div>
+<div class="card"><div class="fact-number">48</div><h3>Noutbuk batareyasi</h3><p>Elektr tarmog‘idan uzilgan holda ishlash imkonini beradi.</p></div>
+<div class="card"><div class="fact-number">49</div><h3>Veb-kamera</h3><p>Video qo‘ng‘iroqlar va tasvirga olish uchun ishlatiladi.</p></div>
+<div class="card"><div class="fact-number">50</div><h3>Texnologiyani o‘rganish</h3><p>Muntazam mashq qilish dasturlash va kompyuter ko‘nikmalarini rivojlantiradi.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Kompyuterdan foydalanish bo‘yicha maslahatlar</h2>
+<div class="intro">
+<p>✅ Muhim fayllarning zaxira nusxasini saqlang.</p>
+<p>✅ Dasturlarni ishonchli manbalardan yuklab oling.</p>
+<p>✅ Noma’lum havolalar va fayllarni ochishda ehtiyot bo‘ling.</p>
+<p>✅ Kompyuterni changdan tozalab, havo aylanishini ta’minlang.</p>
+<p>✅ Parolingizni boshqalarga bermang.</p>
+<p>✅ Dasturlar va tizimni imkon qadar yangilab boring.</p>
+</div>
+</section>
+
+</main>
+
+<footer>
+<h2>IT WORLD</h2>
+<p>Kelajak texnologiyalar bilan boshlanadi!</p>
+<p>Yaratdi: <b>Uchqunbek Moxirjonov</b></p>
+<p>Instagram: <a href="https://www.instagram.com/moxirjanovv_vip63/" target="_blank" rel="noopener">@moxirjanovv_vip63</a></p>
+<p>© 2026 IT World. Barcha huquqlar himoyalangan.</p>
+</footer>
+
+<script>
+function filterCards(){
+ const q=document.getElementById('search').value.toLowerCase();
+ document.querySelectorAll('.searchable .card').forEach(card=>{
+  card.style.display=card.innerText.toLowerCase().includes(q)?'block':'none';
+ });
+}
+</script>
+
+</body>
+</html>
